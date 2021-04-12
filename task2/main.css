@@ -9,7 +9,7 @@ body {
     background: black;
 }
 
-header {
+.header {
     height: 40px;
     z-index: 10000;
     position: fixed;
@@ -23,28 +23,34 @@ header {
     z-index: 10000;
 }
 
-header.sticky {
-    padding: 5px 100px;
+.img {
+    width: 60px;
+    height: 60px;
+    margin-top: -35px;
+}
+
+.header.sticky {
+    padding: 15px 100px;
     background: white;
 }
 
-header.sticky ul li a {
+.header.sticky ul li a {
     color: black;
 }
 
-header ul {
+.header ul {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+.header ul li {
     position: relative;
     list-style: none;
 }
 
-header ul li a {
+.header ul li a {
     margin: 0 15px;
     position: relative;
     color: white;
@@ -85,4 +91,10 @@ header ul li a {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    transition-delay: 0.3s;
 }
